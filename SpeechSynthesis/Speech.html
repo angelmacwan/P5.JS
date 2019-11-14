@@ -1,0 +1,64 @@
+<html>
+
+<head>
+	<title>speech synthesis</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="Wrapper">
+
+		<h2>Speech Synthesis</h2>
+
+		<textarea rows="8" cols="80" placeholder="Type something..." id="inp"></textarea>
+
+		<br>
+
+		<button type="button" id="btn1" onclick="speak()">SPEAK</button>
+		<br>
+
+		<label class="switch">
+			<input type="checkbox" id="int">
+			<span class="slider round"></span>
+		</label>
+
+		<br>
+		<br>
+		<br>
+		<section class="slid">
+			VOLUME
+			<div class="slidecontainer">
+				<input type="range" min="0" max="100" value="80" class="slider" id="vol">
+			</div>
+		</section>
+
+
+		<section class="slid">
+			RATE
+			<div class="slidecontainer">
+				<input type="range" min="10" max="200" value="100" class="slider" id="rate">
+			</div>
+		</section>
+
+		<section class="slid">
+			PITCH
+			<div class="slidecontainer">
+				<input type="range" min="1" max="200" value="100" class="slider" id="pitch">
+			</div>
+		</section>
+
+
+	</div>
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/addons/p5.dom.js"></script>
+	<script src="./p5.speech.js"></script>
+	<script src="./app.js"></script>
+
+</body>
+
+</html>

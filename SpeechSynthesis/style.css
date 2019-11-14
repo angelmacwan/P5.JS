@@ -1,0 +1,214 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+/*
+  colors
+  #0B0C10
+  #1F2833
+  #C5C6C7
+  #66FCF1
+  #45A29E
+ */
+ body{
+   /* background: #e2c9ff; */
+   background-image: linear-gradient(to right, #e2c9ff, #6d4a96);
+ }
+.Wrapper{
+  color: white;
+  background: #1F2833;
+  width: 30rem;
+  text-align: center;
+  padding: 0 2rem 0 2rem;
+  /* border-radius: 0.5rem; */
+  margin: auto;
+  margin-top:3rem;
+
+  animation-name: openAnim;
+  animation-duration: 2s;
+}
+.Wrapper>*{
+  animation-name: openAnimElements;
+  animation-duration: 2s;
+}
+
+.Wrapper h2{
+  font-weight: normal;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5rem 0 3rem 0;
+}
+.Wrapper h2::after{
+  content: '';
+  background-image: linear-gradient(to right, #66FCF1, #45A29E, #66FCF1);
+  display: grid;
+  width:70%;
+  height:1px;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+.Wrapper > #inp{
+  /* color: white; */
+  background:#3bf7d2;
+  border-radius: 2rem;
+  border: none;
+  width:80%;
+  height:5rem;
+  font-size: 1.2rem;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+#btn1{
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  background: #2196F3;
+  width:40%;
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+
+@keyframes openAnim {
+  0%{
+    width:0;
+  }
+  100%{
+  }
+}
+@keyframes openAnimElements{
+  0%{
+    opacity: 0;
+    font-size: 0;
+  }
+  40%{
+    opacity: 0;
+    font-size: 0;
+  }
+  100%{
+  }
+}
+
+
+.slid>.slidecontainer {
+  width: 100%; /* Width of the outside container */
+  position:relative;
+}
+
+/* The slider itself */
+.slid>.slidecontainer>.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%; /* Full-width */
+  height: 5px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 0.5rem;
+}
+
+/* Mouse-over effects */
+.slid>.slidecontainer>.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slid>.slidecontainer>.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #3bf7d2; /*  background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 1rem;
+}
+
+.slid>.slidecontainer>.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-flex;
+  width: 60px;
+  height: 34px;
+}
+.switch::before{
+  content: 'Interrupt';
+  margin-left: -6rem;
+  font-size: 1.5rem;
+  font-weight:normal;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+/* The slider */
+.round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.round:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .round {
+  background-color: #2196F3;
+}
+
+input:focus + .round {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .round:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.switch>.slider.round {
+  border-radius: 34px;
+}
+
+.switch>.slider.round:before {
+  border-radius: 50%;
+}
