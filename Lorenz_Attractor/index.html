@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>LORENZ ATTRACTOR</title>
+
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+
+		<style>
+			body{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+			@media only screen and (max-width: 780px) {
+				body{
+					grid-template-columns: 1fr;
+				}				
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<h2>Lorenz Attractor</h2>
+			<p>
+				The Lorenz system is a system of ordinary differential equations first studied by Edward Lorenz. <br>
+				It is notable for having chaotic solutions for certain parameter values and initial conditions.<br>
+				In particular, the Lorenz attractor is a set of chaotic solutions of the Lorenz system. <br>
+			</p>
+			<p>
+				<b>
+					Processing version available <a href="https://github.com/angelmacwan/Processing/tree/master/Lorenz_Attractor">here</a>
+				</b>
+			</p>
+			<br><br>
+			<input type="number" id="noOfPoints" min="10" placeholder="data points">
+			<button onclick="setDataPoints()">start</button>
+			<br>
+			<input type="checkbox" onchange="toggleOrbit()" id="orbit"> Orbit
+		</div>
+
+		<script src="./app.js" charset="utf-8"></script>
+	</body>
+</html>
