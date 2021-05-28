@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strange Attractors</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .system{
+            font-size: 1.3rem;
+        }
+        button{
+            font-size: 1.2rem;
+            margin: 0.2rem;
+        }
+        @media only screen and (max-width: 780px) {
+            body{
+                grid-template-columns: 1fr;
+            }				
+        }
+    </style>
+
+</head>
+<body>
+    <div class="content">
+
+        <h2>Strange Attractors</h2>
+        <p>
+            The term 'Strange Attractor' is used to describe an attractor <br>
+            (a region or shape to which points are 'pulled' as the result of a certain process) <br>
+            that displays sensitive dependence on initial conditions <br>
+            (that is, points which are initially close on the attractor become exponentially separated <br>
+            with time). The most famous strange attractor is undoubtedly the Lorenz attractor <br>
+            - a three dimensional object whose body plan resembles a butterfly or a mask.
+        </p>
+        <p>Click on bellow buttons to change to diffrent attractors</p>
+
+        <div>
+            <button onclick="loadLorenz()">Lorenz attractor</button> <br>
+            <button onclick="loadRossler()">Rössler attractor</button>
+        </div>
+
+        <div id="info">
+            INFO
+        </div>
+        <br>
+		
+        <input type="checkbox" checked onchange="toggleOrbit()" id="orbit"> Orbit
+       
+        
+    </div>
+
+
+
+    <script src="./app.js" charset="utf-8"></script>
+
+</body>
+</html>
