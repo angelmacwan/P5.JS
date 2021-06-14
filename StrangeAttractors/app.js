@@ -11,6 +11,7 @@ function setup() {
 }
 
 function draw(){
+	 orbitControl();
 	background(0)
 	if (orbit){
 		rotateX(frameCount * 0.005)
