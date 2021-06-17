@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-Means</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js" integrity="sha512-gQVBYBvfC+uyor5Teonjr9nmY1bN+DlOCezkhzg4ShpC5q81ogvFsr5IV4xXAj6HEtG7M1Pb2JCha97tVFItYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./sketch.js"></script>
+
+</head>
+
+<body>
+
+  <button type="button" id="optionsBtn" onclick="showoptions()">Options</button>
+
+  <div class="options">
+    <h1>K-Means</h1>
+    <p><a href="https://angelmacwan.github.io" target="_blank">angelmacwan.github.io</a></p>
+    <br>
+    <p>
+      Visualization of k-means clustering using P5JS.
+    </p>
+    <input id="n" type="number" min="10" placeholder="Number of data points" required> <br>
+    <input id="k" type="number" min="2" placeholder="Number of clusters (K)" required> <br>
+    <button id="btn1" type="button" onclick="StartSim()">Start</button>
+
+  </div>
+
+</body>
+
+</html>
