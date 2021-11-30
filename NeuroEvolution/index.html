@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/brain.js@2.0.0-beta.2/dist/brain-browser.min.js"></script>
+
+    <script src="./spawner.js"></script>
+    <script src="./player.js"></script>
+    <script src="./fcircle.js"></script>
+    <script src="sketch.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .stats {
+        position: fixed;
+        top: 30px;
+        left: 520px;
+        font-size: 1.4rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>NEUROEVOLUTION</h1>
+
+    <div class="stats">
+      <p id="gen">Generation</p>
+      <p id="population">Population</p>
+      <p id="score">Score</p>
+      <p id="fps">FPS</p>
+    </div>
+  </body>
+</html>
