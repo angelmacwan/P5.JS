@@ -51,7 +51,7 @@ class Particle{
 	}
 	
 	show(){
-		strokeWeight(2)
+		strokeWeight(4)
 		stroke(255)
 		point(this.x, this.y, this.z)
 	}
