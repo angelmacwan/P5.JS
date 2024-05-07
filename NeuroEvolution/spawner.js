@@ -1,34 +1,33 @@
 class Spawner {
-  constructor(pPerGen) {
-    this.pPerGen = pPerGen;
+    constructor(pPerGen) {
+        this.pPerGen = pPerGen;
 
-    //Spawn 1 Gen
-    this.spawnNewGen();
-  }
-
-  update() {
-    if (players.length == 0) {
-      //Spawn new Gen
-      this.spawnNewGen();
-    }
-  }
-
-  spawnNewGen() {
-    circles = [];
-
-    for (let i = 0; i < this.pPerGen; i++) {
-      //players.push(new Player(40, random(windowHeight)));
-      players.push(new Player(40, windowHeight / 2));
+        //Spawn 1st Gen
+        this.spawnNewGen();
     }
 
-    allScores.push(score);
-    if (score > highScore) {
-      highScore = score;
-      highestGen = genNumber;
-
-      bestGens = [];
+    update() {
+        if (players.length == 0) {
+            //Spawn new Gen
+            this.spawnNewGen();
+        }
     }
-    genNumber++;
-    score = 0;
-  }
+
+    spawnNewGen() {
+        circles = [];
+
+        for (let i = 0; i < this.pPerGen; i++) {
+            players.push(new Player(width / 2, height - 150));
+        }
+
+        allScores.push(score);
+        if (score > highScore) {
+            highScore = score;
+            highestGen = genNumber;
+
+            bestGens = [];
+        }
+        genNumber++;
+        score = 0;
+    }
 }

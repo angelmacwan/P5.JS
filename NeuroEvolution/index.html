@@ -18,22 +18,31 @@
         font-family: Arial, Helvetica, sans-serif;
       }
       .stats {
-        position: fixed;
-        top: 30px;
-        left: 520px;
         font-size: 1.4rem;
       }
+      .wrapper {
+        display: flex;
+      }
+      #canvas{
+        padding: 5px;
+      }
+
     </style>
   </head>
 
   <body>
-    <h1>NEUROEVOLUTION</h1>
 
-    <div class="stats">
-      <p id="gen">Generation</p>
-      <p id="population">Population</p>
-      <p id="score">Score</p>
-      <p id="fps">FPS</p>
+    
+    <div class="wrapper">
+      <div id="canvas"></div>
+      
+      <div class="stats">
+        <h1>NEUROEVOLUTION</h1>
+        <p id="gen">Generation</p>
+        <p id="population">Population</p>
+        <p id="score">Score</p>
+        <p id="fps">FPS</p>
+      </div>
     </div>
   </body>
 </html>

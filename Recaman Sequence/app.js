@@ -8,7 +8,7 @@ function setup() {
 }
 let h = 0;
 function draw() {
-  background(0, 0, 0, 2);
+  background(0, 0, 0, 3);
   colorMode(HSB, 100);
   noFill();
   stroke(h, 255, 255);

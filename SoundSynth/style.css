@@ -1,0 +1,74 @@
+*{
+  margin:0;
+  padding: 0;
+  transition: 0.5s;
+}
+.OUT{
+  position: absolute;
+  font-size: 3rem;
+  padding-top: 10rem;
+  padding-left: 10rem;
+}
+.notes{
+  display: flex;
+}
+.notes>div{
+  padding-top: 1rem;
+  margin-top: 80vh;
+  margin-right: 0.2rem;
+  height: 3.8rem;
+  width: 8rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.play{
+  background: black;
+  color: white;
+}
+.notes1{
+  background: #ffbfba;
+}.notes2{
+  background: #c7ffba;
+}.notes3{
+  background: #bafff9;
+}.notes4{
+  background: #bac5ff;
+}.notes5{
+  background: #e0baff;
+}.notes6{
+  background: #ffbae2;
+}.notes7{
+  background: #ffbaba;
+}.notes8{
+  background: #b2cf76;
+}.notes9{
+  background: #76cfba;
+}.notes10{
+  background: #9d76cf;
+}
+
+@media only screen and (max-width: 1050px) {
+
+  body{
+    background: black;
+  }
+
+  .OUT{
+    position: absolute;
+    font-size: 2rem;
+    padding-top: 10rem;
+    padding-left: 10rem;
+  }
+  .notes{
+    display: inline;
+  }
+  .notes>div{
+
+    margin: 0.5rem;
+    width: 8rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+}

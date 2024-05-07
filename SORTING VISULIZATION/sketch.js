@@ -79,7 +79,7 @@ function BubbleSort() {
 			}
 		}
 		i++;
-	}, 30);
+	}, 20);
 }
 
 function SelectionSort() {
@@ -108,7 +108,7 @@ function SelectionSort() {
 		arr[i][1] = temp;
 
 		i++;
-	}, 30);
+	}, 20);
 }
 
 function ShellSort() {

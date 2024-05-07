@@ -6,7 +6,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight)
 
   // generating random data
-  for (var i = 0; i < 800; i++) {
+  for (var i = 0; i < 2000; i++) {
     points.push([random(0, 1), random(0, 1)])
   }
 
@@ -55,6 +55,7 @@ class KMeans {
     this.Clusters = []
     this.k = cn
     this.data = []
+    this.Lines = false
   }
 
   loadData(data) {
@@ -122,8 +123,6 @@ class KMeans {
     }
   }
 
-
-
   show() {
     for (let c of this.Clusters) {
       // CENTER
@@ -142,5 +141,9 @@ class KMeans {
         point(px, py)
       }
     }
+  }
+
+  toggleLines() {
+    this.Lines = !this.Lines
   }
 }

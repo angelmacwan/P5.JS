@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sound</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.js"></script>
+
+  <script src="sketch.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="OUT">
+    <p id="seq">
+
+    </p>
+  </div>
+
+  <div class="notes">
+
+    <div class="notes1" onclick="rec(this)">C</div>
+    <div class="notes2" onclick="rec(this)">C#</div>
+    <div class="notes3" onclick="rec(this)">D</div>
+    <div class="notes4" onclick="rec(this)">D#</div>
+    <div class="notes5" onclick="rec(this)">E</div>
+    <div class="notes6" onclick="rec(this)">F</div>
+    <div class="notes7" onclick="rec(this)">F#</div>
+    <div class="notes8" onclick="rec(this)">G</div>
+    <div class="notes9" onclick="rec(this)">G#</div>
+    <div class="notes10" onclick="rec(this)">A</div>
+    <div class="play" onclick="loop()">PLAY</div>
+    <div class="play" onclick="stopPlay()">STOP</div>
+    <div class="play" onclick="reset()">RESET</div>
+
+  </div>
+</body>
+
+</html>
