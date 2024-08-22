@@ -4,79 +4,10 @@
 		<meta charset="utf-8" />
 		<title>Linear Regression</title>
 		<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
-
-		<style media="screen">
-			* {
-				font-family: sans-serif;
-			}
-
-			div {
-				margin: 0.4rem;
-			}
-
-			
-			input {
-				font-size: 1.7rem;
-				margin: 0.4rem;
-				padding: 0.3rem;
-				background: black;
-				color: white;
-				border: none;
-				border-radius: 0.3rem;
-			}
-			button {
-				margin: 0.4rem;
-				padding: 0.3rem;
-				background: black;
-				color: white;
-				font-size: 1.7rem;
-				border: none;
-				border-radius: 0.3rem;
-			}
-
-			@media only screen and (max-width: 750px) {
-				body {
-					display: block;
-				}
-			}
-		</style>
 	</head>
 
 	<body>
-		<div class="">
-			<h1>
-				Visualizing Linear Regression
-				<br />
-				Using Gradient Descent
-			</h1>
-
-			<p>
-				Linear Regression is a statistical method to calculate relationships
-				between inputs and outputs.
-				<br />
-				Linear Regression can only be applied to linear datasets. The aim is to
-				find line that best fits the data.				
-				<br />
-
-				
-				<br />
-				<b>In the Visualization, you can click to add data points on the canvas
-					and see the model draw the line of best fit for the data points.
-				</b>
-			</p>
-			<!-- <input
-				type="number"
-				id="randomPoints"
-				placeholder="Enter Number of Points"
-			/>
-			<button type="button" onclick="addRandomPoints()">
-				Add Random Points
-			</button>
-			<br /> -->
-
-			<button type="button" onclick="resetAll()">Reset</button>
-		</div>
-
+		<button type="button" onclick="resetAll()">Reset</button>
 		<script src="./app.js" charset="utf-8"></script>
 	</body>
 </html>
